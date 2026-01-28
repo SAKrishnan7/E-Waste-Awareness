@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="heading">E-Waste Awareness Hub</h1>
+
+    <div class="log-in">
+
+        <!-- SIGN UP -->
+        <div id="signupSection">
+            <h2 class="signup">Sign Up</h2>
+            <input type="email" id="signupEmail" placeholder="Username"><br><br>
+            <input type="password" id="signupPassword" placeholder="Password"><br><br>
+            <button class="signupb" onclick="signup()">Sign Up</button>
+        </div>
+
+        <!-- LOGIN -->
+        <div id="loginSection">
+            <h2 class="login">Log In</h2>
+            <input type="email" id="loginEmail" placeholder="Username"><br><br>
+            <input type="password" id="loginPassword" placeholder="Password"><br><br>
+            <button class="signupb" onclick="login()">Log In</button>
+        </div>
+
+        <!-- USER -->
+        <div id="userSection">
+            <h2 class="logout">User</h2>
+            <p id="userStatus">Not logged in</p><br>
+            <button class="signupb" onclick="logout()">Log Out</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="auth.js"></script>
+</body>
+</html>

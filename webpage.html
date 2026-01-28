@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Waste Awareness</title>
+    <link rel="stylesheet" href="stylepage.css">
+</head>
+
+<body>
+
+    <!-- Logout Button -->
+    <button id="logoutBtn" onclick="logout()">Log Out</button>
+
+    <!-- Heading -->
+    <h1 class="heading">E-Waste Awareness Hub</h1>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <section class="card">
+            <h2>What is E-Waste?</h2>
+            <p>
+                E-waste refers to discarded electronic devices such as
+                mobile phones, computers, televisions, batteries, and chargers.
+                When not disposed of properly, e-waste releases toxic chemicals
+                that harm the environment and human health.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Why is E-Waste Dangerous?</h2>
+            <ul>
+                <li>Contains harmful substances like lead and mercury</li>
+                <li>Pollutes soil and groundwater</li>
+                <li>Affects human health and wildlife</li>
+                <li>Increases carbon footprint</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>How Can We Reduce E-Waste?</h2>
+            <ul>
+                <li>Repair electronics instead of replacing them</li>
+                <li>Donate or recycle old devices</li>
+                <li>Avoid unnecessary upgrades</li>
+                <li>Buy eco-friendly electronics</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Your Role</h2>
+            <p>
+                As a responsible citizen, you can help reduce e-waste by spreading
+                awareness, recycling properly, and choosing sustainable products.
+                Small actions can make a big difference.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Valuables found in E-Waste</h2>
+            <p>
+                E-waste (electronic waste) contains many valuable materials that can be recovered and reused. The main valuable things found in e-waste are:
+                <ul>
+                    Precious metals:
+                    <li>Gold, silver, and platinum – used in circuit boards and connectors.</li><br>
+                    Base metals:
+                    <li>Copper, aluminum, iron, and steel – found in wires, frames, and components.</li><br>
+                    Rare earth elements:
+                    <li>Neodymium, europium, yttrium, etc. – used in magnets, screens, and speakers.</li><br>
+                    Plastics:
+                    <li>High-quality plastics from casings, keyboards, and cables.</li><br>
+                    Glass:
+                    <li>From screens and monitors.</li><br>
+                    Batteries materials:
+                    <li>Lithium, cobalt, nickel – especially from mobile phone and laptop batteries.</li>
+                </ul>
+                These materials make e-waste valuable for recycling, and proper recycling helps save natural resources and reduce pollution.
+            </p>
+        </section>
+        
+        <section class="card2">
+            <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .quiz-container {
+      background: #ffffff;
+      max-width: 700px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2f855a;
+    }
+    .question {
+      margin-bottom: 18px;
+    }
+    button {
+      background-color: #2f855a;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #276749;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="quiz-container">
+  <h1>E-Waste Quiz</h1>
+
+  <form id="quizForm">
+
+    <div class="question">
+      <p>1. What does E-waste stand for?</p>
+      <input type="radio" name="q1" value="a"> Energy waste<br>
+      <input type="radio" name="q1" value="b"> Electronic waste<br>
+      <input type="radio" name="q1" value="c"> Environmental waste<br>
+    </div>
+
+    <div class="question">
+      <p>2. Which of the following is an example of e-waste?</p>
+      <input type="radio" name="q2" value="a"> Plastic bottle<br>
+      <input type="radio" name="q2" value="b"> Old laptop<br>
+      <input type="radio" name="q2" value="c"> Paper bag<br>
+    </div>
+
+    <div class="question">
+      <p>3. Why is improper disposal of e-waste harmful?</p>
+      <input type="radio" name="q3" value="a"> It releases toxic substances<br>
+      <input type="radio" name="q3" value="b"> It wastes valuable resources<br>
+      <input type="radio" name="q3" value="c"> Both a and b<br>
+    </div>
+
+    <div class="question">
+      <p>4. Which metal can be recovered from e-waste?</p>
+      <input type="radio" name="q4" value="a"> Gold<br>
+      <input type="radio" name="q4" value="b"> Copper<br>
+      <input type="radio" name="q4" value="c"> Both a and b<br>
+    </div>
+
+    <div class="question">
+      <p>5. What should you do with old electronic devices?</p>
+      <input type="radio" name="q5" value="a"> Throw them in the trash<br>
+      <input type="radio" name="q5" value="b"> Burn them<br>
+      <input type="radio" name="q5" value="c"> Give them to an authorized recycler<br>
+    </div>
+
+    <div class="question">
+      <p>6. Which of these contains hazardous materials?</p>
+      <input type="radio" name="q6" value="a"> Mobile phone battery<br>
+      <input type="radio" name="q6" value="b"> Glass bottle<br>
+      <input type="radio" name="q6" value="c"> Cardboard box<br>
+    </div>
+
+    <div class="question">
+      <p>7. What is urban mining?</p>
+      <input type="radio" name="q7" value="a"> Mining in cities<br>
+      <input type="radio" name="q7" value="b"> Extracting valuable materials from waste<br>
+      <input type="radio" name="q7" value="c"> Building underground cities<br>
+    </div>
+
+    <div class="question">
+      <p>8. Recycling e-waste helps to:</p>
+      <input type="radio" name="q8" value="a"> Reduce pollution<br>
+      <input type="radio" name="q8" value="b"> Save natural resources<br>
+      <input type="radio" name="q8" value="c"> Both a and b<br>
+    </div>
+
+    <div class="question">
+      <p>9. Which of the following is NOT e-waste?</p>
+      <input type="radio" name="q9" value="a"> Television<br>
+      <input type="radio" name="q9" value="b"> Refrigerator<br>
+      <input type="radio" name="q9" value="c"> Wooden chair<br>
+    </div>
+
+    <div class="question">
+      <p>10. Who is responsible for reducing e-waste?</p>
+      <input type="radio" name="q10" value="a"> Government only<br>
+      <input type="radio" name="q10" value="b"> Manufacturers only<br>
+      <input type="radio" name="q10" value="c"> Everyone<br>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script>
+  function checkAnswers() {
+    let score = 0;
+
+    if (document.querySelector('input[name="q1"]:checked')?.value === "b") score++;
+    if (document.querySelector('input[name="q2"]:checked')?.value === "b") score++;
+    if (document.querySelector('input[name="q3"]:checked')?.value === "c") score++;
+    if (document.querySelector('input[name="q4"]:checked')?.value === "c") score++;
+    if (document.querySelector('input[name="q5"]:checked')?.value === "c") score++;
+    if (document.querySelector('input[name="q6"]:checked')?.value === "a") score++;
+    if (document.querySelector('input[name="q7"]:checked')?.value === "b") score++;
+    if (document.querySelector('input[name="q8"]:checked')?.value === "c") score++;
+    if (document.querySelector('input[name="q9"]:checked')?.value === "c") score++;
+    if (document.querySelector('input[name="q10"]:checked')?.value === "c") score++;
+
+    document.getElementById("result").innerText =
+      "Your Score: " + score + " / 10";
+  }
+</script>
+<br><br>
+
+<section>
+
+<style>
+    .result {
+      margin-top: 15px;
+      padding: 10px;
+      background: #e8f5e9;
+      border-radius: 6px;
+    }
+</style>
+
+<div class="card">
+  <h2>♻️ E-Waste Carbon Calculator</h2>
+
+  <label>E-Waste Type:</label>
+  <select id="ewaste">
+  <option value="70">Mobile Phone</option>
+  <option value="300">Laptop</option>
+  <option value="500">Desktop Computer</option>
+  <option value="400">Television</option>
+  <option value="20">Battery</option>
+</select>
+
+  <br><br>
+
+  <label>Quantity:</label>
+  <input type="number" id="qty" min="1" placeholder="Enter number">
+
+  <br><br>
+
+  <button onclick="calculateImpact()">Calculate Impact</button>
+
+  <div class="result" id="output"></div>
+</div>
+
+<script>
+function calculateImpact() {
+  let co2PerItem = Number(document.getElementById("ewaste").value);
+  let qty = Number(document.getElementById("qty").value);
+
+  if (qty <= 0) {
+    document.getElementById("output").innerHTML =
+      "⚠️ Please enter a valid quantity.";
+    return;
+  }
+
+  let totalCO2 = co2PerItem * qty;
+
+  let message = "";
+  if (totalCO2 < 100) {
+    message = "Small step, but every action counts 🌱";
+  } else if (totalCO2 < 500) {
+    message = "Good impact! You are helping reduce pollution 👍";
+  } else {
+    message = "Excellent impact! This significantly reduces carbon emissions 🌍";
+  }
+
+  document.getElementById("output").innerHTML =
+    "<b>CO₂ Saved:</b> " + totalCO2 + " kg<br>" +
+    "<b>Impact:</b> " + message + "<br><br>" +
+    "Recycling e-waste saves energy and reduces harmful mining.";
+}
+</script>
+</section>
+
+    </div>
+
+    <!-- Firebase Logic -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signOut } from
+        "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBCN0ILwDaD9j_p2MHHf9POcviH1P9TxKQ",
+            authDomain: "myfirstwebsite-389b7.firebaseapp.com",
+            projectId: "myfirstwebsite-389b7",
+            appId: "1:836791320064:web:cfa6c3be8ff287a81de2e5"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // Protect page
+        onAuthStateChanged(auth, user => {
+            if (!user) {
+                window.location.href = "login.html";
+            }
+        });
+
+        // Logout
+        window.logout = function () {
+            signOut(auth).then(() => {
+                window.location.href = "login.html";
+            });
+        };
+    </script>
+
+</body>
+</html>
