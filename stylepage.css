@@ -1,80 +1,60 @@
-html{
-    height: 100%;
-    margin: 0;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    font-family: Arial, sans-serif;
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f6;
+  margin: 0;
+  padding: 20px;
 }
 
 .heading {
-    color: #e0f7ff;
-    font-family: 'Arial Black', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    padding: 30px 50px;
-    margin: 30px auto;
-    width: fit-content;
-    border-radius: 40px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    box-shadow: 0 0 25px rgba(37, 117, 252, 0.6);
+  text-align: center;
+  color: #2f855a;
 }
 
-/* Top-right logout button */
 #logoutBtn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 18px;
-    border-radius: 10px;
-    border: none;
-    background: linear-gradient(135deg, #ef4444, #dc2626);
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+  float: right;
+  padding: 8px 14px;
 }
 
-#logoutBtn:hover {
-    opacity: 0.9;
-}
-
-/* Educational content */
 .content {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 10px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .card {
-    background: white;
-    color: #0f2027;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.card2 {
-    background: rgb(0, 85, 255);    
-    color: #0f2027;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-
+.question {
+  margin-bottom: 15px;
 }
 
-.card h2 {
-    font-family: 'Arial Black', sans-serif;
-    color: #2575fc;
+button {
+  background-color: #2f855a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.card p, .card li {
-    font-size: 16px;
-    line-height: 1.6;
+button:hover {
+  background-color: #276749;
 }
 
-.card ul {
-    padding-left: 20px;
+.result {
+  margin-top: 15px;
+  padding: 10px;
+  background: #e8f5e9;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #555;
 }
 
