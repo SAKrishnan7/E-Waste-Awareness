@@ -8,7 +8,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #202643, #00b3ff, #00b515);
+  background: linear-gradient(to right, #134e5e, #71b280);
 }
 
 /* ===== MAIN HEADING ===== */
@@ -57,16 +57,17 @@ html, body {
 
 
 .heading {
-  color: #e0f7ff;
+  color: #f0fdfa;                     /* soft white */
   font-family: 'Arial Black', sans-serif;
-  font-size: 50px;
+  font-size: 46px;                    /* balanced size */
   text-align: center;
-  padding: 30px 50px;
+  padding: 26px 48px;
   margin: 40px auto;
   width: fit-content;
-  border-radius: 40px;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  box-shadow: 0 0 25px rgba(37, 117, 252, 0.6);
+  border-radius: 32px;
+
+  background: linear-gradient(to right, #06335f, #680f76);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
 }
 
 /* ===== LOGOUT BUTTON ===== */
