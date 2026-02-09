@@ -73,7 +73,7 @@ html, body {
 /* ===== OPTIONAL BLUE CARD (if used) ===== */
 .card2 {
   background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: #ffffff;
+  color: #000000;
   padding: 25px;
   margin-bottom: 25px;
   border-radius: 20px;
@@ -139,3 +139,4 @@ select {
   font-weight: bold;
   color: #065f46;
 }
+
