@@ -8,10 +8,54 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to right, #202643, #00b3ff, #00b515);
 }
 
 /* ===== MAIN HEADING ===== */
+.scroll-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+.scroll-content {
+    padding: 20px;
+    background-color: rgba(0, 200, 255, 0.5);
+    display: inline-flex;
+    animation: scroll 10s linear infinite;
+}
+
+.scroll-container:hover .scroll-content {
+     animation-play-state: paused;  /* stops scrolling on hover */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.img1, .img2, .img3, .img4 {
+    height: 300px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* smooth effect */
+}
+
+.img1:hover, 
+.img2:hover, 
+.img3:hover, 
+.img4:hover {
+    transform: scale(1.05);       /* zoom in */
+    box-shadow: 0 0 30px #0000ff; /* glowing shadow */
+}
+
+
 .heading {
   color: #e0f7ff;
   font-family: 'Arial Black', sans-serif;
@@ -139,4 +183,3 @@ select {
   font-weight: bold;
   color: #065f46;
 }
-
